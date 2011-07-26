@@ -1,4 +1,3 @@
-
 class Dollar {
 
 	private int amount;

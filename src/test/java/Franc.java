@@ -1,5 +1,4 @@
-
-public class Franc {
+class Franc {
 
 	private int amount;
 
