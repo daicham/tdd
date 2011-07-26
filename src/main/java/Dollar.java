@@ -3,10 +3,12 @@ class Dollar {
 
 	int amount;
 
-	Dollar(int i) {
+	Dollar(int amount) {
+		this.amount = amount;
 	}
 
-	void times(int i) {
+	void times(int multiplier) {
+		amount *= multiplier;
 	}
 
 }
