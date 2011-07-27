@@ -1,6 +1,7 @@
 abstract class Money {
 
 	protected int amount;
+	protected String currency;
 
 	@Override
 	public boolean equals(Object object) {
@@ -10,7 +11,7 @@ abstract class Money {
 
 	abstract Money times(int multiplier);
 
-	static Money dollar(int amount) {
+	static Dollar dollar(int amount) {
 		return new Dollar(amount);
 	}
 
@@ -18,6 +19,8 @@ abstract class Money {
 		return new Franc(amount);
 	}
 
-	abstract String currency();
+	protected String currency() {
+		return currency;
+	}
 
 }
