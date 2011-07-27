@@ -15,7 +15,7 @@ class Money {
 	}
 
 	Money times(int multiplier) {
-		return null;
+		return new Money(amount * multiplier, currency);
 	}
 
 	static Money dollar(int amount) {
@@ -34,4 +34,5 @@ class Money {
 	public String toString() {
 		return amount + " " + currency;
 	}
+
 }
