@@ -17,4 +17,7 @@ abstract class Money {
 	static Franc franc(int amount) {
 		return new Franc(amount);
 	}
+
+	abstract String currency();
+
 }
