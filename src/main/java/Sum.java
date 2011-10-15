@@ -15,8 +15,8 @@ class Sum implements Expression {
 	}
 
 	@Override
-	public Expression plus(Expression tenFrancs) {
-		return null;
+	public Expression plus(Expression addend) {
+		return new Sum(this, addend);
 	}
 
 }
